@@ -1,19 +1,25 @@
 .store {
-    &__swipers {
-        margin-bottom: 20px;
+    overflow: hidden;
+    .block-sm {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__mainswiper {
+        overflow: visible;
         .media-cover{
             padding-top: 125.2%;
         }
     }
     &__thumbswiper {
-        display: none;
+        margin-top: 10px;
         .media-cover {
             padding-top: 124.7%;
         }
     }
 	&__cols {
+        max-width: 720px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px 20px;
@@ -51,6 +57,7 @@
             }
             svg {
                 fill: $maincolor;
+                flex: 0 0 27px;
                 width: 27px;
                 height: 27px;
                 margin-right: 10px;
@@ -58,11 +65,76 @@
             }
             span {
                 font-size: 20px;
+                line-height: 1;
+                letter-spacing: -.02em;
             }
+        }
+    }
+    @media (min-width: $bp6) {
+        &__thumbswiper {
+            display: none;
+        }
+    }
+    @media (max-width: $bp1) {
+        &__cols {
+            gap: 20px;
+        }
+        &__contacts {
+            a {
+                svg {
+                    flex: 0 0 23px;
+                    width: 23px;
+                    height: 23px;
+                    margin-right: 8px;
+                }
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    @media (max-width: $bp2) {
+        &__contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 10px;
+            margin: 0;
+            a {
+                margin: 0;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    } 
+    @media (max-width: $bp4) {
+        .block-sm {
+            margin-bottom: 20px;
+        }
+        &__cols {
+            grid-template-columns: 1fr;
+        }
+        &__col {
+            &:nth-child(3) {
+                grid-column: 1/2;
+            }
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+        }
+    } 
+    @media (max-width: 350px) {
+        &__contacts {
+            grid-template-columns: 1fr;
         }
     }
 }
 .store-way {
+    h5 {
+        font-weight: 500;
+    }
 	&__map {
         margin-bottom: 20px;
     }
@@ -75,13 +147,11 @@
 	&__grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 20px 10px;
     }
-    &__grid-item {
-        .h1 {
-            color: $pink;
-            display: block;
-            margin-bottom: 10px;
+    @media (max-width: $bp1) {
+        .main-btn {
+            margin-top: 20px;
         }
     }
 }

@@ -1,5 +1,5 @@
 .breadcrumbs {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -9,7 +9,7 @@
             color: rgba($maincolor, .4);        
             display: flex;
             align-items: center;
-            margin-top: 8px;
+            margin-bottom: 8px;
             a {
                 color: rgba($maincolor, .4);  
                 &:after {
@@ -39,5 +39,8 @@
                 }
             }
         }
+    }
+    @media (max-width: $bp5) {
+        margin-bottom: 2px;
     }
 }

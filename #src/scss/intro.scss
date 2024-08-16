@@ -39,11 +39,6 @@
                 display: block;
                 padding-left: 185px;
                 transform: translateY(-45%) rotate(-4.6deg);
-                //display: inline-block;
-                //transform: translate(-66%, 35%) rotate(-4.6deg);
-                //position: absolute;
-                //width: 100%;
-                //bottom: 0;
             }
         }
     }
@@ -52,10 +47,47 @@
             min-height: 970px;
         }
     }
-}
-.media-cover {
-}
-.container {
-}
-.liana {
+    @media (max-width: $bp1) {
+        &__content {
+            h1 {
+                font-size: 52px;
+                .liana {
+                    padding-left: 130px;
+                    transform: translateY(-35%) rotate(-4.6deg);
+                }
+            }
+        }
+    }
+    @media (max-width: $bp2) {
+        &__content {
+            h1 {
+                .liana {
+                    font-size: 72px;
+                }
+            }
+        }
+    }
+    @media (max-width: $bp5) {
+        &__content {
+            h1 {
+                font-size: 32px;
+                .liana {
+                    font-size: 58px;
+                    padding-left: 60px;
+                    transform: translateY(-55%) rotate(-4.6deg);
+                }
+            }
+        }
+    }
+    @media (max-width: $bp7) {
+        &__content {
+            h1 {
+                .liana {
+                    font-size: 42px;
+                    padding-left: 40px;
+                    transform: translateY(-35%) rotate(-4.6deg);
+                }
+            }
+        }
+    }
 }

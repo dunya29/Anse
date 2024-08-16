@@ -24,6 +24,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   word-break: break-word;
   overflow-x: hidden;
+  @media (max-width: $bp1) {
+    font-size: 16px;
+  }
 }
 .main {
   padding-top: 200px;
@@ -37,6 +40,9 @@ body {
 .text-l {
   font-size: 64px;
   color: $pink;
+  @media (max-width: $bp2) {
+    font-size: 44px;
+  }
 }
 h1, .h1 , h2, .h2 {
   font-weight: 300;
@@ -44,19 +50,40 @@ h1, .h1 , h2, .h2 {
 }
 h1, .h1 {
   font-size: 58px;
+  @media (max-width: $bp1) {
+    font-size: 44px;
+  }
+  @media (max-width: $bp2) {
+    font-size: 28px;
+  }
 }
 h2, .h2 {
   font-size: 44px;
+  @media (max-width: $bp1) {
+    font-size: 32px;
+  }
+  @media (max-width: $bp2) {
+    font-size: 28px;
+  }
 }
 h3, .h3 {
   font-size: 32px;
   line-height: 1;
+  @media (max-width: $bp1) {
+    font-size: 28px;
+  }
 }
 h4, .h4 {
   font-size: 28px;
+  @media (max-width: $bp1) {
+    font-size: 20px;
+  }
 }
 h5, .h5 {
   font-size: 18px;
+  @media (max-width: $bp1) {
+    font-size: 16px;
+  }
 }
 h6, .h6 {
   font-size: 16px;
@@ -67,17 +94,35 @@ p {
 .liana {
   font-family: "Liana", "Onest", sans-serif;
   font-size: 100px;
+  @media (max-width: $bp1) {
+    font-size: 80px;
+  }
+  @media (max-width: $bp2) {
+    font-size: 42px;
+  }
 }
 .container{
   width: 100%;
-  max-width: 1550px;
-  padding: 0 15px;
+  max-width: 1540px;
+  padding: 0 10px;
   margin: 0 auto;
+  @media (max-width: $bp1) {
+    max-width: 1220px;
+  }
+  @media (max-width: $bp4) {
+    max-width: 550px;
+  }
 }
 .block-sm {
-  max-width: 780px;
+  max-width: calc(100% / 12 * 6 - 10px);
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: $bp3) {
+    max-width: 480px;
+  }
+  @media (max-width: $bp4) {
+    max-width: 100%;
+  }
 }
 .rub:after {
   content: "₽";
@@ -118,11 +163,26 @@ p {
   &:last-child {
     margin-bottom: 100px;
   }
+  @media (max-width: $bp1) {
+    margin-bottom: 100px;
+    &:last-child {
+      margin-bottom: 80px;
+    }
+  }
+  @media (max-width: $bp4) {
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
 }
 .sec-top {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  @media (max-width: $bp1) {
+    margin-bottom: 20px;
+  }
 }
 .sec-top-sm {
   h1, h2, h3, p {
@@ -130,17 +190,50 @@ p {
   }
 }
 .page-top {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   h1 {
     margin-bottom: 20px;
   }
   &--grid  {
     .container {
-      display: flex;
+      display: grid;
+      grid-template-columns: 3fr 9fr;
     }
     .breadcrumbs {
-      flex: 0 0 calc((100% - 750px) / 2);
-      padding-right: 16px;
+      padding: 10px 10px 0 0;
+    }
+  }
+  @media (max-width: $bp2) {
+    &--grid {
+      .breadcrumbs {
+        padding-top: 0;
+      }
+    }
+  }
+  @media (max-width: $bp3) {
+    &--grid {
+      .container {
+        display: block;
+      }
+      .breadcrumbs {
+        padding: 0;
+      }
+      h1 {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  @media (max-width: $bp4) {
+    margin-bottom: 20px;
+    h1 {
+      margin-bottom: 10px;
+    }
+    &--grid {
+      h1 {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -189,6 +282,26 @@ p {
   img, figure, iframe, video {
     overflow: hidden;
     margin: 20px 0;   
+  }
+  @media (max-width: $bp1) {
+    h1, h2, h3, h4, h5, h6, p, hr, ol, ul {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + ol, p + ul {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: $bp5) {
+    ul li {
+      padding-left: 16px;
+        &::before {
+          top: 8px;
+          left: 0;
+        }
+    }
   }
 }
 .btn {
@@ -267,6 +380,14 @@ p {
         &:after {
             width: 100%;
         }
+    }
+  }
+  @media (max-width: $bp2) {
+    .nav-pink {
+      &:after {
+        height: 1px;
+        margin-top: 4px;
+      }
     }
   }
 }
@@ -611,4 +732,19 @@ p {
     filter: grayscale(0.5);
   }
 } */
-
+.item-info {
+  .h1 {
+    color: $pink;
+    display: block;
+    margin-bottom: 10px;
+  }
+  @media (max-width: $bp2) {
+    .h1 {
+      font-size: 32px;
+      margin-bottom: 6px;
+    }
+    p {
+      font-size: 14px;
+    }
+}
+}

@@ -74,6 +74,7 @@
         flex-wrap: wrap;
         margin: -3px;
         span {
+            font-size: 16px;
             line-height: 1;
             color: $maincolor;
             text-align: center;
@@ -128,6 +129,49 @@
             margin-right: 4px;          
         }
     }
+    @media (max-width: $bp1) {
+        &__bar {
+            margin-bottom: 20px;
+        }
+        &__sizes {
+            span {
+                font-size: 14px;
+                padding: 6px 3px;
+            }
+        }
+        &__old-price {
+            font-size: 14px;
+        }
+        &__pay {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: $bp2) {
+        &__sizes {
+            display: none;
+        }
+    }
+    @media (max-width: $bp7) {
+        &__content {
+            h5 {
+                font-size: 14px;
+            }
+        }
+        &__old-price {
+            font-size: 12px;
+        }
+        &__totalprice {
+            font-size: 14px;
+        }
+        &__pay {
+            font-size: 12px;
+            &:before {
+                flex: 0 0 20px;
+                width: 20px;
+                height: 20px;
+            };
+        }
+    }
 }
 .main-cat {
     .sec-top {
@@ -161,9 +205,54 @@
         right: 0;
         transform: translateY(-100%);
     }
+    @media (max-width: $bp1) {
+        .sec-top {
+            h2 {
+                margin-right: 40px;
+            }
+        }
+        &__link {
+            top: -20px;
+        }
+    }
+    @media (max-width: $bp2) {
+        &__row {
+            gap: 10px;
+        }
+        &__row-item {
+            h5{
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: $bp4) {
+        .sec-top {
+            h2 {
+                margin-right: 32px;
+            }
+        }
+        &__row {
+            grid-template-columns: repeat(3,1fr);
+        }
+        &__swiper {
+            padding-bottom: 40px;
+        }
+        &__link {
+            top: auto;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
 }
 .cat-items {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 40px 20px;
+    @media (max-width: $bp2) {
+        gap: 20px 10px;
+    }
+    @media (max-width: $bp4) {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
