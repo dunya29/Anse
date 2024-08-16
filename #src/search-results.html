@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Результаты поиска"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_header.html', {"main": false})
+        <!--main-->  
+        <main class="main">
+            <!--search-->
+            <section class="section search-p">
+                <div class="container">
+                    @@include('_search-form.html', {"value": "Шуба"})
+                    <div class="search-p__results">
+                        <div class="cat-items">
+                            @@include('_card.html', {"labels": false, "nmb": 9, "title": "Шуба SETTE BLACK"})
+                            @@include('_card.html', {"labels": false, "nmb": 10, "title": "Шуба SETTE BLACK"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--other-search-->
+            <section class="section other-search">
+                <div class="container">
+                    <div class="sec-top">
+                        <h3>Не нашли, что искали?</h3>
+                    </div>                    
+                    <div class="cat-items">
+                        @@include('_card.html', {"labels": false, "nmb": 8, "title": "Шуба SETTE BLACK"})
+                        @@include('_card.html', {"labels": false, "nmb": 9, "title": "Шуба SETTE BLACK"})
+                        @@include('_card.html', {"labels": false, "nmb": 10, "title": "Шуба SETTE BLACK"})
+                        @@include('_card.html', {"labels": false, "nmb": 11, "title": "Шуба SETTE BLACK"})
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html', {"main": false})
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

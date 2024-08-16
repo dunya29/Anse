@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-icon-192x192.png">
+    <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-icon-120x120.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/Onest-Regular.woff2" as="font" type="font/woff2" crossorigin> 
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <title>Результаты поиска</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--header-->
+
+
+ <header class="header fixed-block">  
+
+    <div class="fixed-top">
+    Доступна оплата в рассрочку
+</div>
+    <div class="header__inner">
+        <div class="header__top">
+            <div class="container">
+                <div class="search-toggle">
+                    <svg><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+                    Поиск
+                </div>
+                <a href="#" class="header__logo">
+                    <svg viewBox="0 0 136 61" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M57.1926 24.0769L73.7509 47.4241V24.8357H70.7413V24.0769H78.2635V24.832H75.2539V60.2176H73.7509L52.8953 30.3186C52.7796 30.1534 52.6143 30.0293 52.4233 29.9645C52.2324 29.8996 52.0257 29.8973 51.8333 29.9579C51.6409 30.0185 51.4729 30.1388 51.3536 30.3014C51.2342 30.4641 51.1699 30.6605 51.1698 30.8622V59.4625H54.1794V60.1921H46.6572V59.4625H49.6668V24.8357H46.6572V24.0769H57.1926ZM79.0296 48.9161C79.0952 49.3247 79.2156 49.8938 79.3944 50.5541C79.5846 51.2836 79.8285 51.9981 80.124 52.6918C80.4687 53.5017 80.8761 54.2835 81.3424 55.0302C81.8522 55.8439 82.4653 56.5882 83.1664 57.2445C83.837 57.9383 84.5991 58.5372 85.4318 59.0247C86.0892 59.4013 86.7883 59.7 87.5148 59.9148C89.8751 60.5824 93.2422 60.4912 95.4784 59.4041C96.5247 58.9249 97.4536 58.2227 98.1998 57.3466C98.8281 56.5951 99.3028 55.7275 99.597 54.793C99.8449 54.0286 99.9813 53.2325 100.002 52.4291C100.048 51.3265 99.7357 50.2386 99.1118 49.3283C98.4853 48.4822 97.6777 47.7867 96.7479 47.2928C95.6813 46.7163 94.5562 46.2552 93.3917 45.9175L89.5249 44.7756C88.2117 44.3884 86.9208 43.9293 85.658 43.4003C84.4416 42.8977 83.3097 42.2112 82.3018 41.3648C81.3046 40.519 80.4988 39.4707 79.9379 38.2895C79.2994 36.8502 78.9951 35.285 79.0478 33.7113C79.047 32.3522 79.3604 31.0113 79.9634 29.7933C80.5854 28.5247 81.4534 27.3926 82.517 26.4627C83.6652 25.4572 84.9833 24.6641 86.4095 24.1207C88.9209 23.1875 91.6455 22.9851 94.2673 23.537C95.1136 23.7413 95.8614 23.9529 96.5035 24.1717C97.1455 24.3906 97.7183 24.6059 98.2107 24.8101C98.6357 24.997 99.0928 25.0998 99.5569 25.1129C99.8881 25.1534 100.223 25.0717 100.498 24.8831C100.709 24.6358 100.873 24.3512 100.98 24.0441H101.778V33.113C101.6 33.1221 101.421 33.1221 101.242 33.113C100.918 33.0802 100.877 32.9415 100.834 32.6278C100.542 30.5813 99.5569 28.8302 98.2363 27.2725C97.4474 26.2702 96.4695 25.4323 95.358 24.8065C94.3183 24.252 93.14 24.1681 91.9873 24.1134C89.492 23.9966 86.9895 24.2958 85.0305 25.9739C84.3576 26.5369 83.8044 27.229 83.4035 28.0094C83.0439 28.7122 82.8528 29.4891 82.8454 30.2785C82.804 31.3404 83.1357 32.3832 83.7829 33.2261C84.4657 34.0522 85.305 34.7353 86.2526 35.2361C87.3614 35.8394 88.5287 36.3284 89.7364 36.6953C91.0424 37.1039 92.38 37.5283 93.7492 37.9685C95.1185 38.4087 96.4561 38.8951 97.762 39.4277C99.0149 39.9248 100.188 40.6019 101.246 41.4377C102.258 42.2457 103.097 43.2494 103.712 44.389C104.378 45.7117 104.702 47.1805 104.653 48.6608C104.661 50.2962 104.315 51.9139 103.639 53.4032C102.96 54.8926 101.981 56.2263 100.764 57.3211C99.4648 58.4759 97.9635 59.3811 96.3357 59.9914C93.5068 61.0386 90.442 61.2761 87.4856 60.6773C86.4545 60.473 85.489 60.2614 84.5891 60.0425C83.6881 59.82 82.8928 59.6084 82.196 59.4041C81.6941 59.238 81.1731 59.1363 80.6456 59.1013C80.2913 59.0723 79.9365 59.1512 79.6278 59.3275C79.3588 59.5839 79.1657 59.9096 79.0697 60.2687H78.2525V48.9599L79.0296 48.9161Z"/>
+                        <path d="M133.203 24.0768V32.3577H132.452C132.28 31.7814 132.452 28.5967 130.945 27.09C128.687 24.8356 124.937 24.7918 123.284 24.7918L114.401 24.8356V41.3902H116.955C118.545 41.3902 120.212 41.3245 121.584 40.387C122.956 39.4494 124.313 38.4061 124.929 36.874C125.283 35.8979 125.536 34.8882 125.684 33.8607H126.432V48.9124H125.681C125.644 48.9124 125.269 47.5516 125.221 47.4167C125.034 46.8847 124.812 46.3656 124.557 45.8626C123.729 44.2539 122.463 42.802 120.647 42.3678C119.733 42.1825 118.802 42.1042 117.87 42.1344H114.394V59.4624H123.357C124.915 59.4624 129.442 59.4624 131.7 57.2043C135.107 53.797 134.71 50.4299 134.71 48.9269H135.465V60.192H104.606V59.4624H107.634L107.616 24.8356H104.606V24.0768H133.203ZM50.4226 59.4624V60.192H37.6291V59.4624H40.4235C39.9625 57.9988 39.3754 56.5781 38.6688 55.2161C36.5238 51.0902 32.3979 45.9064 25.2186 45.9064C17.7913 45.9064 13.6289 51.455 11.5459 55.6393C10.9327 56.8719 10.4156 58.1501 9.99916 59.4624H12.7935V60.192H0V59.4624H3.34521L8.3904 45.9064H3.88512L4.16237 45.1549H34.9077L29.2898 30.0996L25.1712 19.079L23.6646 15.0662L21.7931 9.99916L25.536 0H25.5944L28.9542 8.99596L31.2123 15.048L36.8265 30.096L42.4445 45.1513L42.7217 45.9028L47.7669 59.4624H50.4226ZM127.935 13.2422L126.352 11.6626L121.084 19.0389L121.61 19.5642L127.935 13.2422Z"/>
+                    </svg>                  
+                </a>
+                <div class="header__actions">
+                    <button type="button" class="btn header__profile-btn"><svg><use xlink:href="img/icons/sprite.svg#profile"></use></svg></button>
+                    <!--<a href="#"><svg><use xlink:href="img/icons/sprite.svg#profile"></use></svg></a>-->
+                    <a href="#"><svg><use xlink:href="img/icons/sprite.svg#cart"></use></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item has-subnav">
+                            <a href="#" class="menu__link">Шубы<svg><use xlink:href="img/icons/sprite.svg#chevron-bot"></use></svg></a>
+                            <div class="menu__dropdown">
+                                <div class="menu__col">
+                                    <span>Коллекции</span>
+                                    <ul>
+                                        <li><a href="#">Premier</a>
+                                        <li><a href="#">Limited</a></li>
+                                        <li><a href="#">Classic</a></li>
+                                        <li><a href="#">SPRING</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <span>Виды</span>
+                                    <ul>
+                                        <li><a href="#">С капюшоном</a></li>
+                                        <li><a href="#">Длина мини</a></li>
+                                        <li><a href="#">Длина макси</a></li>
+                                        <li><a href="#">Плюс сайз</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <span>Sale</span>
+                                    <ul>
+                                        <li><a href="#">SETы</a></li>
+                                        <li><a href="#">Акции</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Не шубы</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Аксессуары</a></li>
+                        <li class="menu__item has-subnav">
+                            <a href="#" class="menu__link">Отзывы<svg><use xlink:href="img/icons/sprite.svg#chevron-bot"></use></svg></a>
+                            <div class="menu__dropdown">
+                                <div class="menu__col">
+                                    <span>Отзывы</span>
+                                    <ul>
+                                        <li><a href="#">Отзывы за 2022-2023</a>
+                                        <li><a href="#">Отзывы за 2021-2022</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Производство</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Магазин</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   </div>
+   <div class="fixed-block search header__search">
+        <div class="container">
+            <div class="search__top">
+                <!--search-form-->
+<form action="" class="form search-form" onsubmit="event.preventDefault();searchFormSuccess(this)">
+    <div class="search-form__inner">
+        <div class="item-form">
+            <input type="text" name="" placeholder="Найти" value="">
+            <svg class="search-form__icon"><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+        </div>
+        <button type="reset" class="search-form__reset" aria-label="Очистить поиск"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+    </div>
+    <button class="btn main-btn search-form__submit" type="submit">Найти</button>
+</form>
+                <button type="button" class="search__close">Закрыть</button>
+            </div>
+            <div class="search__results">
+                <div class="search__items">
+                    <span>Популярные товары</span>
+                    <ul>
+                        <li><a href="#">Шуба белая</a></li>
+                        <li><a href="#">Варежки</a></li>
+                        <li><a href="#">Шуба красная</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!--main-->  
+        <main class="main">
+            <!--search-->
+            <section class="section search-p">
+                <div class="container">
+                    <!--search-form-->
+<form action="" class="form search-form" onsubmit="event.preventDefault();searchFormSuccess(this)">
+    <div class="search-form__inner">
+        <div class="item-form">
+            <input type="text" name="" placeholder="Найти" value="Шуба">
+            <svg class="search-form__icon"><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+        </div>
+        <button type="reset" class="search-form__reset" aria-label="Очистить поиск"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+    </div>
+    <button class="btn main-btn search-form__submit" type="submit">Найти</button>
+</form>
+                    <div class="search-p__results">
+                        <div class="cat-items">
+                            <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-9.webp" type="image/webp"><img src="img/cards/card-9.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                            <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-10.webp" type="image/webp"><img src="img/cards/card-10.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--other-search-->
+            <section class="section other-search">
+                <div class="container">
+                    <div class="sec-top">
+                        <h3>Не нашли, что искали?</h3>
+                    </div>                    
+                    <div class="cat-items">
+                        <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-8.webp" type="image/webp"><img src="img/cards/card-8.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                        <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-9.webp" type="image/webp"><img src="img/cards/card-9.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                        <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-10.webp" type="image/webp"><img src="img/cards/card-10.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                        <!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        
+        <div class="media-cover">
+            <picture><source srcset="img/cards/card-11.webp" type="image/webp"><img src="img/cards/card-11.jpg" alt="Шуба SETTE BLACK"></picture>
+            <picture><source srcset="img/cards/card-7.webp" type="image/webp"><img src="img/cards/card-7.jpg" alt="Шуба SETTE BLACK"></picture>
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">Шуба SETTE BLACK</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+
+
+ <footer class="footer">  
+
+   <div class="container">
+    <div class="footer__top">
+        <div class="footer__col">
+            <a href="#" class="footer__logo">
+                <svg viewBox="0 0 136 61" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M57.1926 24.0769L73.7509 47.4241V24.8357H70.7413V24.0769H78.2635V24.832H75.2539V60.2176H73.7509L52.8953 30.3186C52.7796 30.1534 52.6143 30.0293 52.4233 29.9645C52.2324 29.8996 52.0257 29.8973 51.8333 29.9579C51.6409 30.0185 51.4729 30.1388 51.3536 30.3014C51.2342 30.4641 51.1699 30.6605 51.1698 30.8622V59.4625H54.1794V60.1921H46.6572V59.4625H49.6668V24.8357H46.6572V24.0769H57.1926ZM79.0296 48.9161C79.0952 49.3247 79.2156 49.8938 79.3944 50.5541C79.5846 51.2836 79.8285 51.9981 80.124 52.6918C80.4687 53.5017 80.8761 54.2835 81.3424 55.0302C81.8522 55.8439 82.4653 56.5882 83.1664 57.2445C83.837 57.9383 84.5991 58.5372 85.4318 59.0247C86.0892 59.4013 86.7883 59.7 87.5148 59.9148C89.8751 60.5824 93.2422 60.4912 95.4784 59.4041C96.5247 58.9249 97.4536 58.2227 98.1998 57.3466C98.8281 56.5951 99.3028 55.7275 99.597 54.793C99.8449 54.0286 99.9813 53.2325 100.002 52.4291C100.048 51.3265 99.7357 50.2386 99.1118 49.3283C98.4853 48.4822 97.6777 47.7867 96.7479 47.2928C95.6813 46.7163 94.5562 46.2552 93.3917 45.9175L89.5249 44.7756C88.2117 44.3884 86.9208 43.9293 85.658 43.4003C84.4416 42.8977 83.3097 42.2112 82.3018 41.3648C81.3046 40.519 80.4988 39.4707 79.9379 38.2895C79.2994 36.8502 78.9951 35.285 79.0478 33.7113C79.047 32.3522 79.3604 31.0113 79.9634 29.7933C80.5854 28.5247 81.4534 27.3926 82.517 26.4627C83.6652 25.4572 84.9833 24.6641 86.4095 24.1207C88.9209 23.1875 91.6455 22.9851 94.2673 23.537C95.1136 23.7413 95.8614 23.9529 96.5035 24.1717C97.1455 24.3906 97.7183 24.6059 98.2107 24.8101C98.6357 24.997 99.0928 25.0998 99.5569 25.1129C99.8881 25.1534 100.223 25.0717 100.498 24.8831C100.709 24.6358 100.873 24.3512 100.98 24.0441H101.778V33.113C101.6 33.1221 101.421 33.1221 101.242 33.113C100.918 33.0802 100.877 32.9415 100.834 32.6278C100.542 30.5813 99.5569 28.8302 98.2363 27.2725C97.4474 26.2702 96.4695 25.4323 95.358 24.8065C94.3183 24.252 93.14 24.1681 91.9873 24.1134C89.492 23.9966 86.9895 24.2958 85.0305 25.9739C84.3576 26.5369 83.8044 27.229 83.4035 28.0094C83.0439 28.7122 82.8528 29.4891 82.8454 30.2785C82.804 31.3404 83.1357 32.3832 83.7829 33.2261C84.4657 34.0522 85.305 34.7353 86.2526 35.2361C87.3614 35.8394 88.5287 36.3284 89.7364 36.6953C91.0424 37.1039 92.38 37.5283 93.7492 37.9685C95.1185 38.4087 96.4561 38.8951 97.762 39.4277C99.0149 39.9248 100.188 40.6019 101.246 41.4377C102.258 42.2457 103.097 43.2494 103.712 44.389C104.378 45.7117 104.702 47.1805 104.653 48.6608C104.661 50.2962 104.315 51.9139 103.639 53.4032C102.96 54.8926 101.981 56.2263 100.764 57.3211C99.4648 58.4759 97.9635 59.3811 96.3357 59.9914C93.5068 61.0386 90.442 61.2761 87.4856 60.6773C86.4545 60.473 85.489 60.2614 84.5891 60.0425C83.6881 59.82 82.8928 59.6084 82.196 59.4041C81.6941 59.238 81.1731 59.1363 80.6456 59.1013C80.2913 59.0723 79.9365 59.1512 79.6278 59.3275C79.3588 59.5839 79.1657 59.9096 79.0697 60.2687H78.2525V48.9599L79.0296 48.9161Z"/>
+                    <path d="M133.203 24.0768V32.3577H132.452C132.28 31.7814 132.452 28.5967 130.945 27.09C128.687 24.8356 124.937 24.7918 123.284 24.7918L114.401 24.8356V41.3902H116.955C118.545 41.3902 120.212 41.3245 121.584 40.387C122.956 39.4494 124.313 38.4061 124.929 36.874C125.283 35.8979 125.536 34.8882 125.684 33.8607H126.432V48.9124H125.681C125.644 48.9124 125.269 47.5516 125.221 47.4167C125.034 46.8847 124.812 46.3656 124.557 45.8626C123.729 44.2539 122.463 42.802 120.647 42.3678C119.733 42.1825 118.802 42.1042 117.87 42.1344H114.394V59.4624H123.357C124.915 59.4624 129.442 59.4624 131.7 57.2043C135.107 53.797 134.71 50.4299 134.71 48.9269H135.465V60.192H104.606V59.4624H107.634L107.616 24.8356H104.606V24.0768H133.203ZM50.4226 59.4624V60.192H37.6291V59.4624H40.4235C39.9625 57.9988 39.3754 56.5781 38.6688 55.2161C36.5238 51.0902 32.3979 45.9064 25.2186 45.9064C17.7913 45.9064 13.6289 51.455 11.5459 55.6393C10.9327 56.8719 10.4156 58.1501 9.99916 59.4624H12.7935V60.192H0V59.4624H3.34521L8.3904 45.9064H3.88512L4.16237 45.1549H34.9077L29.2898 30.0996L25.1712 19.079L23.6646 15.0662L21.7931 9.99916L25.536 0H25.5944L28.9542 8.99596L31.2123 15.048L36.8265 30.096L42.4445 45.1513L42.7217 45.9028L47.7669 59.4624H50.4226ZM127.935 13.2422L126.352 11.6626L121.084 19.0389L121.61 19.5642L127.935 13.2422Z"/>
+                </svg>                  
+            </a>
+            <div class="footer__contact"><a class="link" href="tel:88005006127">8 800 500 61 27</a></div>
+            <div class="footer__contact"><a class="link" href="mailto:info@anse-shop.ru">info@anse-shop.ru</a></div>         
+            <div class="social">
+                <a href="#"><svg><use xlink:href="img/icons/sprite.svg#vk"></use></svg></a>
+                <a href="#"><svg><use xlink:href="img/icons/sprite.svg#whatsapp"></use></svg></a>
+                <a href="#"><svg><use xlink:href="img/icons/sprite.svg#telegram"></use></svg></a>
+            </div>
+        </div>
+        <nav class="footer__nav">
+            <span>Каталог</span>
+            <ul>
+                <li><a href="#" class="link">Шубы</a></li>
+                <li><a href="#" class="link">Не шубы</a></li>
+                <li><a href="#" class="link">Аксессуары</a></li>
+                <li><a href="#" class="link">Акции</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__nav">
+            <span>Покупателям</span>
+            <ul>
+                <li><a href="#" class="link">Магазин ANSE в СПб</a></li>
+                <li><a href="#" class="link">Доставка и оплата</a></li>
+                <li><a href="#" class="link">Как подобрать размер</a></li>
+                <li><a href="#" class="link">Правила ухода</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__nav">
+            <span>О компании</span>
+            <ul>
+                <li><a href="#" class="link">Производство</a></li>
+                <li><a href="#" class="link">Отзывы</a></li>
+                <li><a href="#" class="link">Звезды</a></li>
+            </ul>
+        </nav>
+        <div class="footer__col">
+            <h3>Подписаться на скидки и новинки</h3>
+            <form action="" class="form mail-form">
+                <div class="item-form">
+                    <input type="text" placeholder="Ваш e-mail">
+                    <div class="item-form__error"></div>
+                </div>
+                <div class="form__footer">
+                    <button type="submit" class="btn main-btn">Подписаться</button>
+                    <p>Подписываясь на рассылку, Вы соглашаетесь с условиями <a href="#" class="link" target="_blank">Политики конфиденциальности</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span><a href="#" class="link">Политика конфиденциальности</a></span>
+        <span><a href="#" class="link">Публичная оферта</a></span>
+        <span><a href="#" class="link">Cookies</a></span>
+        <div class="footer__dev">Designed by <a href="#" class="link" target="_blank" rel="nofollow">OMNI</a></div>
+    </div>
+   </div>
+</footer>
+        <!--overlay-->
+<div class="overlay"></div>
+<!--tippy-content-->
+<div class="tippy-content"></div>
+<!--modal-->
+<modal class="modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button type="button" class="btn close-btn"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+            <div class="modal__scroll"></div>
+        </div>
+    </div>
+</modal>
+    </div>
+    <!--scripts-->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/inputmask.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/libs/fancybox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

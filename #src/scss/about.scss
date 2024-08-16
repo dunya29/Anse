@@ -1,0 +1,201 @@
+.main-why {
+	&__row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+	&__item {
+        .media-cover {
+            padding-top: 67.41%;
+            margin-bottom: 10px;
+        }
+    }
+}
+.main-about {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        align-items: start;
+    }
+    .media-cover {
+        padding-top: 129.04%;
+    }
+	&__content {
+        h3 {
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .main-btn {
+            width: 100%;
+            max-width: 273px;
+        }
+    }
+}
+.main-content {
+    .page-content {
+        column-count: 2;
+        column-gap: 20px;
+        margin-top: 20px;
+        break-inside: avoid;
+    }
+}
+.main-smi {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+        a:nth-child(5n) {
+            justify-self: end;
+        }
+        a:nth-child(5n+1) {
+            justify-self: start;
+        }
+        img {
+            max-height: 66px;
+        }
+    }
+    @media (max-width: $bp2) {
+        &__row {
+            display: flex;
+            gap: 0;
+        }
+    }
+}
+.about {
+    .page-content {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0
+        }
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+        .media-cover {
+            padding-top: 130.21%;
+            img {
+                margin: 0;
+            }
+        }
+    }
+    &__sec {
+        margin-bottom: 40px;
+    }
+}
+.about-dir {
+    position: relative;
+    margin-bottom: 20px;
+    .media-cover {
+        padding-top: 71.33%;
+        img {
+            margin: 0;
+        }
+    }
+    &__lbls {
+        position: absolute;
+        top: 0;      
+    }
+    &__lbl--plus, &__lbl--minus {
+        cursor: pointer;
+        transition: all .3s linear;
+    }
+    &__lbl--minus {
+        visibility: hidden;
+        opacity: 0;
+    }
+    &__txt {
+        position: fixed;
+        z-index: 1001;
+        width: 100%;
+        max-width: 240px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .3s ease-out, opacity .3s ease-out;
+        span {
+            font-size: 16px;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid $pink;
+            background: $white;
+            text-align: center;
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+.about-hist {
+    .page-content {
+        img {
+            margin: 10px 0;
+        }
+    }
+    &__sec {
+        display: flex;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+            .text-l::after {
+                content: none;
+            }
+        }
+        .text-l {
+            flex: 0 0 26%;
+            padding-top: 5px;
+            margin-right: 10px;
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                max-width: 150px;
+                height: calc(100% - 60px);
+                background: url(../img/about-hist.svg) top center / contain no-repeat
+            }
+        }
+    }
+}
+.about-season {
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__img {
+        max-width: 535px;
+        margin: 0 auto;
+    }
+}
+.about-act {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    .main-btn {
+        width: 100%;
+    }
+    &__img {
+        max-width: 405px;
+        margin: 0 auto 40px;
+    }
+    &__content {
+        max-width: 354px;
+        margin: 0 auto 40px;
+        text-align: center;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+

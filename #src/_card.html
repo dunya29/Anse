@@ -1,0 +1,37 @@
+<!--card-->
+<div class="card">
+    <a href="#" class="card__top">
+        @@if (labels === true) {
+        <div class="card__labels">
+            <span>Sale</span>
+            <span>new</span>
+        </div>
+        }
+        <div class="media-cover">
+            <img src="img/cards/card-@@nmb.jpg" alt="@@title">
+            <img src="img/cards/card-7.jpg" alt="@@title">
+        </div>
+        <div class="card__hidden">
+            <div class="card__bar">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card__sizes">
+                <span class="disabled">XXS</span>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+        </div>
+    </a>
+    <div class="card__content">
+        <h5><a href="#">@@title</a></h5>
+        <div class="card__price">
+            <del class="rub card__old-price">8 980</del>
+            <span class="h5 rub card__totalprice">8 980</span>
+        </div>
+        <div class="card__pay">Долями по 6 995 ₽</div>
+    </div>
+</div>

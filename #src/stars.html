@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Звезды"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_header.html', {"main": false})
+        <!--main-->  
+        <main class="main">
+            <!--page-top-->
+            <div class="page-top">
+                <div class="container">
+                    @@include('_breadcrumbs.html', {
+                        "page": "Звезды"
+                    })
+                    <h1>Звезды</h1>
+                </div>
+            </div>
+            <!--stars-->
+            <div class="section stars">
+                <div class="container">
+                    <div class="stars__grid">
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 2, "name": "Родиана Новикова"})
+                        @@include('_item-star.html', {"nmb": 3, "name": "Дарья Дубровская"})
+                        @@include('_item-star.html', {"nmb": 4, "name": "Екатерина Ратундалова"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 2, "name": "Родиана Новикова"})
+                        @@include('_item-star.html', {"nmb": 3, "name": "Дарья Дубровская"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 4, "name": "Екатерина Ратундалова"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 2, "name": "Родиана Новикова"})
+                        @@include('_item-star.html', {"nmb": 3, "name": "Дарья Дубровская"})
+                        @@include('_item-star.html', {"nmb": 4, "name": "Екатерина Ратундалова"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 2, "name": "Родиана Новикова"})
+                        @@include('_item-star.html', {"nmb": 3, "name": "Дарья Дубровская"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                        @@include('_item-star.html', {"nmb": 4, "name": "Екатерина Ратундалова"})
+                        @@include('_item-star.html', {"nmb": 1, "name": "Виктория Дайнеко"})
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('_footer.html', {"main": false})
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

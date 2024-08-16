@@ -1,0 +1,124 @@
+.search {
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr 177px;
+        gap: 11px;
+        align-items: center;
+    }
+	&__close {
+        font-weight: 500;
+        color: $gray;
+        &:hover {
+            color: $pink;
+        }
+    }
+    &__results {
+        margin-top: 30px;
+    }
+    &__items {
+        span {        
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: $gray;
+                display: block;
+                padding: 10px 12px;
+                &:hover {
+                    color: $maincolor;
+                    background: $white-gray;
+                }
+            }
+        }
+    }
+}
+.search-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+        fill: $maincolor;
+        flex: 0 0 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+}
+.search-form {
+    max-width: 1332px;
+    display: flex;
+    align-items: center;
+    .item-form {
+        margin-bottom: 0;
+        input {
+            padding: 16px 42px;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            &::placeholder {
+                color: #E0E0E0;
+            }
+            &:focus {
+                border-color: $maincolor;
+                & + svg {
+                    fill: $gray;
+                }
+            }
+        }
+    }
+	&__inner {
+        flex: 1 1 auto;
+        position: relative;
+    }
+    &__icon {
+        fill: #E0E0E0;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 16px;
+        transition: all .3s linear;
+        pointer-events: none;
+    }
+	&__reset {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 16px;
+        width: 12px;
+        height: 12px;
+        transition: all .3s linear;
+        svg {
+            stroke: #e0e0e0;
+            width: 100%;
+            height: 100%;
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+	&__submit {
+        min-width: 177px;
+        margin-left: 20px;
+    }
+}
+.search-p {
+    &__results {
+        margin-top: 20px;
+        &-empty {
+            padding-top: 40px;
+            text-align: center;
+            p {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

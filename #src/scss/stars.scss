@@ -1,0 +1,20 @@
+.stars {
+	&__grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        .item-star:nth-child(10n+1), .item-star:nth-child(10n+8) {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+            .media-cover {
+                padding-top: 137.33%;
+            }
+        } 
+    }
+}
+.item-star {
+    .media-cover {
+        padding-top: 133.97%;
+        margin-bottom: 10px;
+    }
+}

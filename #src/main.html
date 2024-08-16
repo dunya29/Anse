@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@@include('_head.html', {   
+    "title": "Главная"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_header.html', {"main": true})
+        <!--main-->  
+        <main class="main">
+            <!--intro-->
+            <section class="section banner-block intro">
+                <div class="media-cover"><img src="img/intro.jpg" alt=""></div>
+                <div class="container">
+                    <div class="intro__content">
+                        <h1>Надень ANSE <span class="liana">тебя увидят</span></h1>
+                    </div>
+                </div>
+            </section>
+            <!--main-cat-->
+            <section class="section switch-block main-cat">
+                <div class="container">
+                    <div class="sec-top">
+                        <h2 class="h1 nav-pink active" data-nav="" role="button">Шубы</h2>
+                        <h2 class="h1 nav-pink" data-nav="" role="button">Не шубы</h2>
+                    </div>
+                    <div class="main-cat__block active" data-block="">
+                        <div class="section main-cat__swiper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 8, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 9, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 10, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 11, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                            <div class="main-cat__link"><a href="#" class="link link--main">Смотреть все</a></div>
+                        </div>
+                        <div class="main-cat__row">
+                            @@include('_main-cat_cat.html', {"nmb": 1, "title": "Sale"})
+                            @@include('_main-cat_cat.html', {"nmb": 2, "title": "Аксессуары"})
+                            @@include('_main-cat_cat.html', {"nmb": 3, "title": "Шубы Premier"})
+                            @@include('_main-cat_cat.html', {"nmb": 4, "title": "Шубы Classic"})
+                            @@include('_main-cat_cat.html', {"nmb": 5, "title": "Шубы Limited"})
+                            @@include('_main-cat_cat.html', {"nmb": 6, "title": "Новая коллекция"})
+                        </div>
+                    </div>
+                    <div class="main-cat__block" data-block="">
+                        <div class="section main-cat__swiper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 10, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 8, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 11, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('_card.html', {"labels": false, "nmb": 9, "title": "Шуба SETTE BLACK"})
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                            <div class="main-cat__link"><a href="#" class="link link--main">Смотреть все</a></div>
+                        </div>
+                        <div class="main-cat__row">
+                            @@include('_main-cat_cat.html', {"nmb": 3, "title": "Шубы Premier"})
+                            @@include('_main-cat_cat.html', {"nmb": 4, "title": "Шубы Classic"})
+                            @@include('_main-cat_cat.html', {"nmb": 1, "title": "Sale"})
+                            @@include('_main-cat_cat.html', {"nmb": 2, "title": "Аксессуары"})
+                            @@include('_main-cat_cat.html', {"nmb": 5, "title": "Шубы Limited"})
+                            @@include('_main-cat_cat.html', {"nmb": 6, "title": "Новая коллекция"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--main-why-->
+            <section class="section main-why">
+                <div class="container">
+                    <div class="sec-top">
+                        <h2 class="h1"><span class="liana">5 причин</span> носить ANSE</h2>
+                    </div>
+                    <div class="main-why__row">
+                        <div class="main-why__item">
+                            <div class="media-cover"><img src="img/main-why-1.jpg" alt="Ручная работа"></div>
+                            <h5>Ручная работа</h5>
+                        </div>
+                        <div class="main-why__item">
+                            <div class="media-cover"><img src="img/main-why-2.jpg" alt="Ручная работа"></div>
+                            <h5>Ручная работа</h5>
+                        </div>
+                        <div class="main-why__item">
+                            <div class="media-cover"><img src="img/main-why-3.jpg" alt="Ручная работа"></div>
+                            <h5>Ручная работа</h5>
+                        </div>
+                        <div class="main-why__item">
+                            <div class="media-cover"><img src="img/main-why-4.jpg" alt="Ручная работа"></div>
+                            <h5>Ручная работа</h5>
+                        </div>
+                        <div class="main-why__item">
+                            <div class="media-cover"><img src="img/main-why-5.jpg" alt="Ручная работа"></div>
+                            <h5>Ручная работа</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--main-about-->
+            <section class="section main-about">
+                <div class="container">                    
+                    <h2 class="h1">О нас</h2>
+                    <div class="media-cover">
+                        <img src="img/main-about.jpg" alt="">
+                    </div>
+                    <div class="main-about__content">
+                        <h3>«Для тех, кому важно, что на себе носить»</h3>
+                        <p>– с любовью, ваша Мария ANSE</p>
+                        <a href="#" class="btn main-btn">Подробнее о бренде</a>
+                    </div>
+                </div>
+            </section>
+            <!--main-smi-->
+            <section class="section main-smi">
+                <div class="container">
+                    <div class="sec-top">
+                        <h2 class="h1"><span class="liana">Пресса</span> об ANSE</h2>
+                    </div>
+                    <div class="swiper5  swiper">
+                        <div class="swiper-wrapper main-smi__row">
+                            <div class="swiper-slide"><a href="#" target="_blank"><img src="img/smi-logo-1.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank"><img src="img/smi-logo-2.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank"><img src="img/smi-logo-3.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank"><img src="img/smi-logo-1.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank"><img src="img/smi-logo-3.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--main-content-->
+            <section class="section main-content">
+                <div class="container">
+                    <h3>Дизайнерские шубы из искусственного меха</h3>
+                    <div class="page-content">
+                        <p>Все экошубы ANSE с 2011 года создаются в Санкт-Петербурге, на собственном производстве. Во главе производства стоят родители создательницы бренда, Марии Кошкиной: Алла и Владимир, а дизайн всех изделий Мария создает сама. Мы работаем только с лучшими материалами, которые отбираются и тестируются нашей командой.</p>
+                        <p>Все экошубы ANSE с 2011 года создаются в Санкт-Петербурге, на собственном производстве. Во главе производства стоят родители создательницы бренда, Марии Кошкиной: Алла и Владимир, а дизайн всех изделий Мария создает сама. Мы работаем только с лучшими материалами, которые отбираются и тестируются нашей командой.</p>
+                        <p>Все экошубы ANSE с 2011 года создаются в Санкт-Петербурге, на собственном производстве. Во главе производства стоят родители создательницы бренда, Марии Кошкиной: Алла и Владимир, а дизайн всех изделий Мария создает сама. Мы работаем только с лучшими материалами, которые отбираются и тестируются нашей командой.</p>                   
+                        <p>Все экошубы ANSE с 2011 года создаются в Санкт-Петербурге, на собственном производстве. Во главе производства стоят родители создательницы бренда, Марии Кошкиной: Алла и Владимир, а дизайн всех изделий Мария создает сама. Мы работаем только с лучшими материалами, которые отбираются и тестируются нашей командой.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html', {"main": true})
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

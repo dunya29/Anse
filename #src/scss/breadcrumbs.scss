@@ -1,0 +1,43 @@
+.breadcrumbs {
+    margin-bottom: 20px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li {    
+            font-size: 14px; 
+            color: rgba($maincolor, .4);        
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            a {
+                color: rgba($maincolor, .4);  
+                &:after {
+                    background: rgba($maincolor, .4); 
+                }
+            }
+            &:before {
+                content: "";
+                display: block;
+                flex: 0 0 7px;
+                width: 7px;
+                height: 7px;
+                border-top: 1px solid rgba($maincolor, .4);
+                border-left: 1px solid rgba($maincolor, .4);
+                transform: rotate(135deg);
+                margin: 0 10px;
+            }
+            &:last-child {
+                color: $maincolor;  
+                &::before {
+                    border-color: $maincolor;
+                }
+            }
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
