@@ -2826,6 +2826,7 @@ p {
 
   .main-about__content h3 {
     font-size: 24px;
+    letter-spacing: -1px;
   }
 
   .main-about__content p {
